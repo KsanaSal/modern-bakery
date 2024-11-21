@@ -55,7 +55,6 @@ body {
     font-size: 18px;
     font-weight: 400;
     line-height: 1.5;
-    background-color: yellow;
 }
 
 h1,
@@ -136,6 +135,38 @@ ul {
 }
 
 /* styles header */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 32px;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 40px;
+}
+
+.header__menu {
+    display: flex;
+    gap: 64px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.header__button {
+    display: block;
+}
+
 .link {
     color: var(--color-primary-light);
     text-decoration: none;
@@ -148,7 +179,7 @@ ul {
 
 .button {
     display: block;
-    padding: 10px 24px;
+    padding: 16px 32px;
     color: var(--color-primary-light);
     font-weight: 600;
     background-color: var(--color-brand-normal);
@@ -485,18 +516,29 @@ ul {
     padding: 32px 0;
     position: relative;
     background-color: var(--color-primary-dark);
-    /* background-image: url('../images/footer-background.png'); */
+    background-image: url("../images/footer/footer-background.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
+.footer__container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
 .footer__nav,
 .footer__address {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-basis: 50%;
+    text-align: left;
     gap: 20px;
-    text-align: center;
+}
+
+.footer__logo {
+    flex-grow: 1;
 }
 
 .footer__menu {
@@ -532,7 +574,7 @@ ul {
 
 .footer__socials {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 24px;
     margin-top: 16px;
 }
