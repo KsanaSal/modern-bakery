@@ -41,13 +41,19 @@
 }
 
 /* styles base */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     color: var(--color-primary-dark);
     background-color: var(--color-primary-light);
     font-family: "Poppins", sans-serif;
-    font-size: 16px;
-    font-weight: 300;
+    font-size: 18px;
+    font-weight: 400;
     line-height: 1.5;
     background-color: yellow;
 }
@@ -108,9 +114,11 @@ ul {
     font-weight: 900;
     line-height: 1.5;
 }
+
 .section__title--centered {
     text-align: center;
 }
+
 .container {
     width: 100%;
     max-width: 1288px;
@@ -204,20 +212,33 @@ ul {
 /* styles traditions */
 
 .traditions-section {
-    padding-top: 40px;
+    padding-top: 96px;
+}
+
+.traditions-section__container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.traditions-section__content {
+    max-width: 710px;
 }
 
 .traditions-section__title {
     margin-bottom: 42px;
 }
 
-.section__title {
-    font-size: 32px;
-    font-weight: 900;
-    line-height: 1.5;
+.traditions-section__text {
+    &--limited {
+        max-width: 340px;
+    }
 }
-.section__title--centered {
-    text-align: center;
+
+.traditions-section__image {
+    width: 400px;
+    border-radius: 400px 400px 0px 0px;
 }
 
 /* styles chefs */
@@ -230,42 +251,64 @@ ul {
 
 .chefs-section__title {
     position: relative;
-    margin: 0 auto 24px;
+    margin-bottom: 80px;
+
+    &::before,
+    &::after {
+        display: block;
+        position: absolute;
+        bottom: 24px;
+        width: 352px;
+        border: 2px solid var(--color-brand-light);
+        content: "";
+    }
+
+    &::before {
+        left: 0;
+    }
+
+    &::after {
+        right: 0;
+    }
 }
 
 .chefs-section__list {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 40px 30px;
 }
 
 .chefs-section__item {
-    display: flex;
+    flex-basis: calc((100% - 30px) / 2);
 }
 
 .chef-card {
     display: flex;
     align-items: flex-start;
-    gap: 16px;
+    gap: 30px;
 }
 
 .chef-card__photo {
-    width: 140px;
-    border-radius: 2px 2px 2px 116px;
-    box-shadow: -8px 8px 0 0 var(--color-primary-light),
-        -8px 8px 0 2px var(--color-secondary-dark);
+    width: 240px;
+    border-radius: 4px 4px 4px 200px;
+    box-shadow: -16px 16px 0 0 var(--color-primary-light),
+        -16px 16px 0 2px var(--color-secondary-dark);
 }
 
 .chef-card__title {
     margin-bottom: 16px;
-    font-size: 24px;
+    font-size: 40px;
     font-weight: 600;
 }
 
 .chef-card__text {
-    font-size: 14px;
+    font-size: 18px;
     margin-bottom: 24px;
+}
+
+.chef-card__text:last-child {
+    margin-bottom: 0;
 }
 
 /* styles format */
