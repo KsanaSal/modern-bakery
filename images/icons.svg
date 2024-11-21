@@ -1,8 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" overflow="hidden" style="position:absolute;width:0;height:0">
     <defs>
-        <symbol id="icon-arrow" viewBox="0 0 36 32">
+        <symbol id="icon-arrow-left" viewBox="0 0 36 32">
             <path
                 d="M1.062 17.414a2 2 0 0 1 0-2.828L13.79 1.858a2 2 0 1 1 2.828 2.828L5.304 16l11.314 11.314a2 2 0 1 1-2.828 2.828L1.062 17.414zM36 18H2.476v-4H36v4z" />
+        </symbol>
+        <symbol id="icon-arrow-right" viewBox="0 0 18 16">
+            <path
+                d="M17.7071 7.29289C18.0976 7.68342 18.0976 8.31658 17.7071 8.70711L11.3431 15.0711C10.9526 15.4616 10.3195 15.4616 9.92893 15.0711C9.53841 14.6805 9.53841 14.0474 9.92893 13.6569L15.5858 8L9.92893 2.34315C9.53841 1.95262 9.53841 1.31946 9.92893 0.928933C10.3195 0.538408 10.9526 0.538408 11.3431 0.928933L17.7071 7.29289ZM17 9L0.238094 9L0.238094 7L17 7L17 9Z" />
         </symbol>
         <symbol id="icon-facebook" viewBox="0 0 32 32">
             <path
