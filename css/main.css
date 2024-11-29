@@ -258,6 +258,49 @@ ul {
   fill: var(--color-primary-light);
 }
 
+.input {
+  position: relative;
+}
+.input__label {
+  position: absolute;
+  top: 16px;
+  left: 42px;
+}
+.input__control {
+  padding: 8px 24px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.17;
+  border: 1px solid var(--color-secondary-dark);
+  border-radius: 8px;
+  background-color: transparent;
+}
+.input__control:focus {
+  border-color: var(--color-brand-normal);
+  outline: none;
+}
+.input__control::-moz-placeholder {
+  color: var(--color-secondary-dark);
+  font-size: 16px;
+  line-height: 1.17;
+}
+.input__control::placeholder {
+  color: var(--color-secondary-dark);
+  font-size: 16px;
+  line-height: 1.17;
+}
+.input__control:focus::-moz-placeholder {
+  color: var(--color-primary-dark);
+}
+.input__control:focus::placeholder {
+  color: var(--color-primary-dark);
+}
+@media screen and (min-width: 768px) {
+  .input__control {
+    padding: 16px 42px;
+  }
+}
+
 .section {
   padding: 20px 0;
 }
@@ -580,4 +623,67 @@ ul {
   .formats-section__button {
     display: flex;
   }
+}
+
+.contact-section {
+  padding-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  .contact-section {
+    padding-bottom: 96px;
+  }
+}
+.contact-section__container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+@media screen and (min-width: 768px) {
+  .contact-section__container {
+    flex-direction: row;
+    gap: 32px;
+  }
+}
+.contact-section__title {
+  margin-bottom: 16px;
+}
+.contact-section__form-field {
+  margin-bottom: 24px;
+}
+.contact-section__button {
+  display: block;
+  margin: 0 auto 16px;
+}
+.contact-section__map {
+  flex-shrink: 0;
+  height: 176px;
+  margin: 0 -24px;
+  border-radius: 16px;
+  border: none;
+}
+@media screen and (min-width: 768px) {
+  .contact-section__map {
+    margin: auto;
+    width: 320px;
+    height: 500px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contact-section__map {
+    width: 600px;
+    height: 595px;
+  }
+}
+
+.form-terms {
+  margin: 0 auto;
+  max-width: 220px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+}
+.form-terms__link {
+  color: var(--color-primary-dark);
+  text-underline-offset: 2px;
 }/*# sourceMappingURL=main.css.map */
