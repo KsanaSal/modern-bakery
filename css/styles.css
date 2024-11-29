@@ -1,81 +1,34 @@
-/* styles main */
-/* styles hero */
-/* .hero-section {
-    padding: 272px 0;
-    background-image: linear-gradient(
-            102.76deg,
-            rgba(18, 18, 17, 0.78) 2.03%,
-            rgba(18, 18, 17, 0.6) 58.46%,
-            rgba(18, 18, 17, 0) 90.36%
-        ),
-        url("../images/hero-section-background.jpg");
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
-} */
-
-/* .hero-section__title {
-    margin-bottom: 0;
-    color: var(--color-primary-light);
-    text-align: center;
-    font-size: 128px;
-    line-height: 1.5;
-    font-weight: 900;
-} */
-
-/* .text-brand {
-    color: var(--color-brand-normal);
-} */
-
-/* styles advantages */
-/* .advantages-section {
-    padding: 16px 0;
-    background-color: var(--color-brand-normal);
-} */
-/* .advantages-section__list {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-    background-color: transparent;
-    padding: 0;
-} */
-
-/* .advantages-section__item {
-    color: var(--color-primary-light);
-    font-size: 20px;
-} */
-
 /* styles traditions */
 
-.traditions-section {
+/* .traditions-section {
     padding-top: 96px;
-}
+} */
 
-.traditions-section__container {
+/* .traditions-section__container {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     gap: 40px;
-}
+} */
 
-.traditions-section__content {
+/* .traditions-section__content {
     max-width: 710px;
-}
+} */
 
-.traditions-section__title {
+/* .traditions-section__title {
     margin-bottom: 42px;
-}
+} */
 
-.traditions-section__text {
+/* .traditions-section__text {
     &--limited {
         max-width: 340px;
     }
-}
+} */
 
-.traditions-section__image {
+/* .traditions-section__image {
     width: 400px;
     border-radius: 400px 400px 0px 0px;
-}
+} */
 
 /* styles chefs */
 .chefs-section {

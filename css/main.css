@@ -370,4 +370,37 @@ ul {
     color: var(--color-primary-light);
     font-size: 20px;
   }
+}
+
+.traditions-section {
+  padding-top: 40px;
+}
+@media screen and (min-width: 768px) {
+  .traditions-section {
+    padding-top: 96px;
+  }
+}
+.traditions-section__container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+}
+.traditions-section__content {
+  max-width: 710px;
+}
+.traditions-section__title {
+  margin-bottom: 42px;
+}
+.traditions-section__text--limited {
+  max-width: 340px;
+}
+.traditions-section__image {
+  display: none;
+  border-radius: 400px 400px 0px 0px;
+}
+@media screen and (min-width: 768px) {
+  .traditions-section__image {
+    display: block;
+  }
 }/*# sourceMappingURL=main.css.map */
